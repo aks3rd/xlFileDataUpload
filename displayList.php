@@ -263,7 +263,7 @@ window.addEventListener('load',initView);
  }
  catch(PDOException $e)
  {
-   echo $sql . "<br>" . $e->getMessage();
+   echo "<br>" . $e->getMessage();
  }
 ?>
 <h3>List of Stations : </h3>
