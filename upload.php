@@ -50,7 +50,7 @@ else
     }
     catch(PDOException $e)
     {
-        echo $sql . "<br>" . $e->getMessage();
+        echo "<br>" . $e->getMessage();
     }
   }
   else
