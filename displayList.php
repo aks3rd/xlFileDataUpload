@@ -94,6 +94,15 @@
          span.innerHTML="Required";
          return;
       }
+      let number='0123456789.';
+      for(var i=0;i<input.value.length;i++)
+      {
+        if(number.indexOf(input.value.charAt(i))==-1)
+        {
+          span.innerHTML="Invalid energy";
+          return;
+        }
+      }
       var xmlHttpRequest=new XMLHttpRequest();
       xmlHttpRequest.onreadystatechange=function(){
          if(this.readyState==4 && this.status==200)
@@ -200,6 +209,7 @@
         span=document.createElement("span");
         span.id="Errorixix"+i;
         span.innerHTML="";  
+	span.style.color="red";
         td.appendChild(span);
 
         tr.appendChild(td);
