@@ -1,6 +1,5 @@
 <?php
- include("MasterPageTopSection.php"); 
- require_once 'lib/spout-3.1.0/src/Spout/Autoloader/autoload.php';
+ include("MasterPageTopSection.php");
 ?>
 <script>
 function checkFileExtention(sender)
