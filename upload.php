@@ -1,6 +1,8 @@
 <?php require_once 'lib/SimpleXLSX.php'; ?>
 <?php include("MasterPageTopSection.php"); ?>
 <?php
+date_default_timezone_set('Europe/Lisbon');
+$tz = date_default_timezone_get();
 
 $target_dir = "uploads/";
 $target_file = $target_dir.basename($_FILES["xlFile"]["name"]);
